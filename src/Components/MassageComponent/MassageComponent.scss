@@ -1,0 +1,31 @@
+.massage_component,
+.massage_component_alt {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 12px;
+  p {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .time {
+    font-size: 12px;
+    text-align: right;
+  }
+  .email{
+    color: #421094;
+    font-weight: 700;
+  }
+}
+.massage_component{
+    background-color: #421094;
+    border-radius: 12px 12px 0px 12px;
+    color: #fff;
+    margin: 12px 16px 12px 70px;
+}
+.massage_component_alt{
+    background-color: #F2F1F8;
+    border-radius: 12px 12px 12px 0px;
+    color: #141416;
+    margin: 12px 70px 12px 16px;
+}

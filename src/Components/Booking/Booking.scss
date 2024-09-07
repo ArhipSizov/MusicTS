@@ -1,0 +1,95 @@
+.booking {
+    background-color: #F2F1F8;
+    width: 369px;
+    min-height: 1500px;
+    padding-bottom: 120px;
+  .booking_nav {
+    padding: 0;
+    padding-top: 36px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    width: 100%;
+    cursor: pointer;
+    img {
+      margin-left: 5%;
+    }
+    h1 {
+      color: black;
+      font-weight: 700;
+      font-size: 24px;
+      position: absolute;
+      text-align: center;
+      width: 375px;
+      top: 39px;
+    }
+  }
+  .choose_booking {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+  p {
+    color: black;
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: #CDCDCD 2px solid;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .active{
+    font-weight: 600;
+    border-bottom-color: #421094;
+  }
+}
+  .body{
+    .basic{
+        display: flex;
+        justify-content: space-between;
+        div{
+            padding-right: 60px;
+            padding-top: 14px;
+            h1{
+                font-weight: 700;
+                font-size: 22px;
+            }
+        }
+    }
+    .rooms{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .booking_footer{
+    width: 375px;
+    position: fixed;
+    bottom: 77px;
+    padding: 12px 20px;
+    background-color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    p{
+      width: 100px;
+      color: black;
+      text-align: center;
+    }
+    .button_pay, .not_button_pay{
+      cursor: pointer;
+      width: 200px;
+      background-color: #421094;
+      border-radius: 10px;
+      p{
+        margin-top: 7px;
+        font-size: 18px;
+        width: 200px;
+        color: #ffffff;
+      }
+    }
+    .not_button_pay{
+      background-color: #4310947e;
+      cursor: not-allowed;
+    }
+  }
+}

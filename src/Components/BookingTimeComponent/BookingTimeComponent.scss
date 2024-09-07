@@ -1,0 +1,20 @@
+.booking_time_component, .booking_time_component_active{
+    padding: 10px 12px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 8px 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    p{
+        color: black;
+        font-weight: 500;
+        display: inline-block;
+    }
+}
+.booking_time_component_active{
+    background-color: #421094;
+    p{
+        color: #fff !important;
+    }
+}

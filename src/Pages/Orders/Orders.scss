@@ -1,0 +1,35 @@
+.orders {
+  .nav {
+    background-color: #fff;
+    margin-top: 90px;
+    h1 {
+      color: black;
+      font-weight: 700;
+      font-size: 32px;
+      position: absolute;
+      text-align: center;
+      width: 375px;
+      top: 30px;
+    }
+    .choose_orders {
+        display: flex;
+        justify-content: space-between;
+      p {
+        width: 50%;
+        text-align: center;
+        font-weight: 500;
+        padding-bottom: 8px;
+        border-bottom: #CDCDCD 2px solid;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      .active{
+        font-weight: 600;
+        border-bottom-color: #421094;
+      }
+    }
+  }
+  .OrdersComponent_all{
+    margin: 24px;
+  }
+}

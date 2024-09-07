@@ -1,0 +1,450 @@
+{
+  "13studio": {
+    "id": "0",
+    "name": "13studio",
+    "logo": "/13studio/13studio.png",
+    "photo": "/13studio/13studio_cab.png",
+    "number": "+375 33 333 84 31",
+    "email": "13studio@gmail.com",
+    "location": "ул. Платонова, 31б-13",
+    "image_map": "/13studio/13studio_map.png",
+    "square": "30-65",
+    "description": "От музыкального хита тебя отделяет один шаг! Мы уверены, что у каждого музыканта есть возможность написать хит, который покорит сердца множества слушателей!",
+    "area": "Звукозапись",
+    "time_days": "Пн-Вс",
+    "time_hours_start": "9",
+    "time_hours_end": "21",
+    "cost": "25",
+    "services": [
+      "Звукозапись",
+      "Сведение",
+      "Мастеринг",
+      "Аранжировка",
+      "Озвучивание"
+    ],
+    "facilities": ["Wi-Fi", "Парковка", "Чай/кофе", "Курилка"],
+    "halls": {
+      "Room": {
+        "id": "0",
+        "trueName": "Room",
+        "name": "Комната S",
+        "photo": "/13studio/13studio_room_s.png",
+        "square": "30",
+        "cost": "25",
+        "equipment": [
+          {
+            "id": "0",
+            "name": "Комплект железа PASTE 201 BRONZE UNIVERSAL SET",
+            "cost": "3"
+          },
+          {
+            "id": "1",
+            "name": "Комплект железа SABIAN XSR Performance Set Pro",
+            "cost": "6"
+          }
+        ],
+        "services": [
+          {
+            "id": "0",
+            "name": "Видеозапись репетиции (1 час)",
+            "cost": "15"
+          }
+        ]
+      },
+      "Room_L": {
+        "id": "1",
+        "trueName": "Room_L",
+        "name": "Комната L",
+        "photo": "/13studio/13studio_room_l.png",
+        "square": "65",
+        "cost": "50",
+        "equipment": [
+          {
+            "id": "0",
+            "name": "Комплект железа PASTE 201 BRONZE UNIVERSAL SET",
+            "cost": "3"
+          },
+          {
+            "id": "1",
+            "name": "Комплект железа SABIAN XSR Performance Set Pro",
+            "cost": "6"
+          }
+        ],
+        "services": [
+          {
+            "id": "0",
+            "name": "In-Ear мониторинг Sennheiser IEM G4",
+            "cost": "50"
+          },
+          {
+            "id": "1",
+            "name": "Видеозапись репетиции (1 час)",
+            "cost": "15"
+          }
+        ]
+      }
+    }
+  },
+  "Nerv-R": {
+    "id": "1",
+    "name": "Nerv-R",
+    "logo": "/Nerv-R/Nerv-R.png",
+    "photo": "/Nerv-R/Nerv-R_cab.png",
+    "number": "+375 33 659 31 42",
+    "email": "Nerv-R@gmail.com",
+    "location": "пер. Щербакова, 8",
+    "image_map": "/Nerv-R/Nerv-R_map.png",
+    "square": "48",
+    "description": "Музыкальный хит у нас в студии у тебя точно получится!",
+    "area": "Звукозапись",
+    "time_days": "Пн-Вс",
+    "time_hours_start": "9",
+    "time_hours_end": "22",
+    "cost": "40",
+    "services": [
+      "Звукозапись",
+      "Сведение",
+      "Мастеринг",
+      "Оцифровка",
+      "Озвучивание"
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "Парковка",
+      "Чай/кофе",
+      "Курилка",
+      "Туалет",
+      "Отдельный вход",
+      "Аренда оборудования"
+    ],
+    "halls": {
+      "Room": {
+        "id": "0",
+        "trueName": "Room",
+        "name": "Комната",
+        "photo": "/Nerv-R/Nerv-R_room.png",
+        "square": "48",
+        "cost": "40",
+        "equipment": [
+          {
+            "id": "0",
+            "name": "Комплект железа PASTE 201 BRONZE UNIVERSAL SET",
+            "cost": "3"
+          },
+          {
+            "id": "1",
+            "name": "Комплект железа SABIAN XSR Performance Set Pro",
+            "cost": "6"
+          }
+        ],
+        "services": [
+          {
+            "id": "0",
+            "name": "Видеозапись репетиции (1 час)",
+            "cost": "15"
+          }
+        ]
+      }
+    }
+  },
+  "OneThousand": {
+    "id": "2",
+    "name": "1000 Records",
+    "logo": "/OneThousand/OneThousand.png",
+    "photo": "/OneThousand/OneThousand_cab.png",
+    "number": "+375 33 765 79 32",
+    "email": "OneThousand@gmail.com",
+    "location": "ст. м. Институт Культуры",
+    "image_map": "/OneThousand/OneThousand_map.png",
+    "square": "38",
+    "description": "Я не придумал описание для третьей компании",
+    "area": "Звукозапись",
+    "time_days": "Пн-Вс",
+    "time_hours_start": "8",
+    "time_hours_end": "21",
+    "cost": "25",
+    "services": ["Сведение", "Мастеринг", "Песня “под ключ”"],
+    "facilities": ["Wi-Fi"],
+    "halls": {
+      "Room": {
+        "id": "0",
+        "trueName": "Room",
+        "name": "Комната",
+        "photo": "/OneThousand/OneThousand_room.png",
+        "square": "48",
+        "cost": "40",
+        "equipment": [
+          {
+            "id": "0",
+            "name": "Комплект железа PASTE 201 BRONZE UNIVERSAL SET",
+            "cost": "3"
+          },
+          {
+            "id": "1",
+            "name": "Комплект железа SABIAN XSR Performance Set Pro",
+            "cost": "6"
+          },
+          {
+            "id": "2",
+            "name": "Кардан DW 7002PT Double Bass",
+            "cost": "10"
+          },
+          {
+            "id": "3",
+            "name": "Электрогитара Ibanez S521BBS",
+            "cost": "20"
+          },
+          {
+            "id": "4",
+            "name": "Электрогитара Jackson JS32T Kelly",
+            "cost": "15"
+          },
+          {
+            "id": "5",
+            "name": "Электроакустическая гитара Fender CD - 60 SCE Nat. WN",
+            "cost": "18"
+          }
+        ],
+        "services": [
+          {
+            "id": "0",
+            "name": "In-Ear мониторинг Sennheiser IEM G4",
+            "cost": "50"
+          },
+          {
+            "id": "1",
+            "name": "Видеозапись репетиции (1 час)",
+            "cost": "15"
+          }
+        ]
+      }
+    }
+  },
+  "OvertoneStudio": {
+    "id": "3",
+    "name": "Overtone Studio",
+    "logo": "/OvertoneStudio/OvertoneStudio.png",
+    "photo": "/OvertoneStudio/OvertoneStudio_cab.png",
+    "number": "+375 33 040 34 43",
+    "email": "OvertoneStudio@gmail.com",
+    "location": "Минск, улица Макаёнка, 1",
+    "image_map": "/OvertoneStudio/OvertoneStudio_map.png",
+    "square": "25-50",
+    "description": "Здесь вы найдёте ваши шедевы",
+    "area": "Звукозапись",
+    "time_days": "Пн-Вс",
+    "time_hours_start": "10",
+    "time_hours_end": "20",
+    "cost": "20",
+    "services": ["Сведение", "Мастеринг", "Репетиция"],
+    "facilities": ["Wi-Fi", "Курилка", "Туалет"],
+    "halls": {
+      "Room": {
+        "id": "0",
+        "trueName": "Room",
+        "name": "Комната A",
+        "photo": "/OvertoneStudio/OvertoneStudio_room_a.png",
+        "square": "25",
+        "cost": "20",
+        "equipment": [],
+        "services": [
+          {
+            "id": "1",
+            "name": "Видеозапись репетиции (1 час)",
+            "cost": "15"
+          }
+        ]
+      },
+      "Room_B": {
+        "id": "0",
+        "trueName": "Room_B",
+        "name": "Комната B",
+        "photo": "/OvertoneStudio/OvertoneStudio_room_b.png",
+        "square": "50",
+        "cost": "40",
+        "equipment": [
+          {
+            "id": "0",
+            "name": "Комплект железа PASTE 201 BRONZE UNIVERSAL SET",
+            "cost": "3"
+          },
+          {
+            "id": "1",
+            "name": "Комплект железа SABIAN XSR Performance Set Pro",
+            "cost": "6"
+          },
+          {
+            "id": "3",
+            "name": "Электрогитара Ibanez S521BBS",
+            "cost": "20"
+          },
+          {
+            "id": "4",
+            "name": "Электрогитара Jackson JS32T Kelly",
+            "cost": "15"
+          },
+          {
+            "id": "5",
+            "name": "Электроакустическая гитара Fender CD - 60 SCE Nat. WN",
+            "cost": "18"
+          }
+        ],
+        "services": [
+          {
+            "id": "1",
+            "name": "Видеозапись репетиции (1 час)",
+            "cost": "15"
+          }
+        ]
+      }
+    }
+  },
+  "BAHrecords": {
+    "id": "4",
+    "name": "BAH records",
+    "logo": "/BAHrecords/BAHrecords.png",
+    "photo": "/BAHrecords/BAHrecords_cab.png",
+    "number": "+375 33 497 32 52",
+    "email": "BAHrecords@gmail.com",
+    "location": "ул. Кальварийская, 44",
+    "image_map": "/BAHrecords/BAHrecords_map.png",
+    "square": "42",
+    "description": "Ошытшоаво выоывл лвыло. Влывд твыовыо рыф!",
+    "area": "Звукозапись",
+    "time_days": "Пн-Вс",
+    "time_hours_start": "9",
+    "time_hours_end": "21",
+    "cost": "24",
+    "services": [
+      "Сведение",
+      "Мастеринг",
+      "Оцифровка",
+      "Озвучивание",
+      "Аранжировка"
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "Туалет",
+      "Зона отдыха",
+      "Чай/кофе",
+      "Кондиционер",
+      "Парковка"
+    ],
+    "halls": {
+      "Room": {
+        "id": "0",
+        "trueName": "Room",
+        "name": "Комната",
+        "photo": "/BAHrecords/BAHrecords_room.png",
+        "square": "42",
+        "cost": "24",
+        "equipment": [
+          {
+            "id": "0",
+            "name": "Комплект железа PASTE 201 BRONZE UNIVERSAL SET",
+            "cost": "3"
+          },
+          {
+            "id": "1",
+            "name": "Комплект железа SABIAN XSR Performance Set Pro",
+            "cost": "6"
+          }
+        ],
+        "services": []
+      }
+    }
+  },
+  "AllInclude": {
+    "id": "5",
+    "name": "All Include",
+    "logo": "/AllInclude/AllInclude.png",
+    "photo": "/AllInclude/AllInclude_cab.png",
+    "number": "+375 33 435 97 32",
+    "email": "AllInclude@gmail.com",
+    "location": "улица Макаёнка, 1",
+    "image_map": "/AllInclude/AllInclude_map.png",
+    "square": "100",
+    "description": "Здесь вы найдёте всё что вам нужно для ваших шедевров",
+    "area": "Звукозапись",
+    "time_days": "Пн-Вс",
+    "time_hours_start": "6",
+    "time_hours_end": "22",
+    "cost": "100",
+    "services": [
+      "Сведение",
+      "Мастеринг",
+      "Песня “под ключ”",
+      "Оцифровка",
+      "Озвучивание",
+      "Аранжировка",
+      "Звукозапись",
+      "Репетиция"
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "Отдельный вход",
+      "Курилка",
+      "Туалет",
+      "Зона отдыха",
+      "Чай/кофе",
+      "Кондиционер",
+      "Просторный зал",
+      "Парковка",
+      "Аренда оборудования"
+    ],
+    "halls": {
+      "Room": {
+        "id": "0",
+        "trueName": "Room",
+        "name": "Комната",
+        "photo": "/AllInclude/AllInclude_room.png",
+        "square": "100",
+        "cost": "100",
+        "equipment": [
+          {
+            "id": "0",
+            "name": "Комплект железа PASTE 201 BRONZE UNIVERSAL SET",
+            "cost": "3"
+          },
+          {
+            "id": "1",
+            "name": "Комплект железа SABIAN XSR Performance Set Pro",
+            "cost": "6"
+          },
+          {
+            "id": "2",
+            "name": "Кардан DW 7002PT Double Bass",
+            "cost": "10"
+          },
+          {
+            "id": "3",
+            "name": "Электрогитара Ibanez S521BBS",
+            "cost": "20"
+          },
+          {
+            "id": "4",
+            "name": "Электрогитара Jackson JS32T Kelly",
+            "cost": "15"
+          },
+          {
+            "id": "5",
+            "name": "Электроакустическая гитара Fender CD - 60 SCE Nat. WN",
+            "cost": "18"
+          }
+        ],
+        "services": [
+          {
+            "id": "0",
+            "name": "In-Ear мониторинг Sennheiser IEM G4",
+            "cost": "50"
+          },
+          {
+            "id": "1",
+            "name": "Видеозапись репетиции (1 час)",
+            "cost": "15"
+          }
+        ]
+      }
+    }
+  }
+}

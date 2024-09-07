@@ -1,0 +1,79 @@
+.booking_pay {
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  background-color: #fff;
+  width: 375px;
+  z-index: 5;
+  padding-top: 10px;
+  p {
+    color: #000 !important;
+  }
+  .cost_time_end {
+    width: 80%;
+    margin-left: 10%;
+    p {
+        margin-left: 10px;
+      font-size: 18px;
+      display: inline-block;
+    }
+  }
+  .basic {
+    margin-left: 23px;
+    width: 329px;
+    display: flex;
+    justify-content: space-between;
+    div {
+      padding-right: 60px;
+      padding-top: 14px;
+      h1 {
+        font-weight: 700;
+        font-size: 22px;
+      }
+    }
+  }
+  .cost {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 18px;
+    text-align: center;
+  }
+  .booking_pay_card {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 53px 18px 43px;
+    input {
+      cursor: pointer;
+    }
+  }
+  .booking_pay_choice_p {
+    text-align: center;
+    margin-top: 23px;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .booking_pay_choice {
+    font-size: 20px;
+    margin: 13px 43px 0 43px;
+    p {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    input {
+      cursor: pointer;
+    }
+  }
+  .button {
+    position: static;
+  }
+  .NavLink {
+    display: block;
+    text-decoration: none;
+    color: #421094;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

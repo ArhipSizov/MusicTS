@@ -1,0 +1,60 @@
+.bank_card {
+  padding-top: 36px;
+  .div {
+    img {
+      margin-left: 5%;
+    }
+    h1 {
+      color: black;
+      font-weight: 700;
+      font-size: 24px;
+      position: absolute;
+      text-align: center;
+      width: 375px;
+      top: 30px;
+    }
+  }
+  .bank_card_add {
+    margin: 32px 24px;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 10px 32px;
+    input {
+      width: 100%;
+      margin-top: 12px;
+      padding: 4px;
+      outline: none;
+      font-weight: 400;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f2f1f8;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 45%;
+      }
+    }
+    .button {
+      width: 100%;
+      cursor: pointer;
+      background-color: #421094;
+      color: #ffffff;
+      border-radius: 10px;
+      text-align: center;
+      padding: 6px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .error{
+        margin-top: 12px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 24px;
+    }
+  }
+}

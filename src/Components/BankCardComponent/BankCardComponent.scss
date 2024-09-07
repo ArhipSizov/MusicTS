@@ -1,0 +1,15 @@
+.bank_card_component {
+  margin: 32px 24px;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 10px 32px;
+  p {
+    margin: 6px 0;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+}

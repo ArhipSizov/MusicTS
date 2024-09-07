@@ -1,0 +1,18 @@
+.equipment_services{
+    background-color: #fff;
+    padding: 10px 16px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    p{
+        color: black;
+        font-size: 500;
+    }
+}
+.equipment_services_active{
+    background-color: #421094;
+    p{
+        color: #fff !important;
+    }
+}

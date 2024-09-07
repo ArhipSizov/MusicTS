@@ -1,0 +1,93 @@
+.full_block{
+    .button{
+        position: fixed;
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        background-color: #421094;
+        font-size: 18px;
+        padding: 12px 0;
+        border-radius: 10px;
+        margin: 0 32px;
+        width: 311px;
+        bottom: 92px;
+    }
+    .nav{
+        img{
+            cursor: pointer;
+            padding: 0 2%;
+        }
+    }
+    .photo{
+        width: 100%;
+    }
+    .body{
+        margin: 32px 20px;
+        h2{
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+        .top_information{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            .top_information_no_img{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                .name{
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: black;
+                }
+                div{
+                    p{
+                        display: inline;
+                        margin-right: 8px;
+                        margin-left: 40px;
+                    }
+                    .p_alt{
+                        margin-left: 28px;
+                    }
+                    img{
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        .list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            p{
+                margin-bottom: 8px;
+            }
+        }
+        .img_map{
+            width: 335px;
+            height: 190px;
+            border-radius: 16px;
+            margin-top: 12px;
+        }
+        .but_map{
+            cursor: pointer;
+            width: 335px;
+            height: 190px;
+            position: absolute;
+            margin-top: -194px;
+            transition: 0.2s;
+            border-radius: 16px;
+            p{
+                display: none;
+                text-align: center;
+                margin-top: 80px;
+            }
+        }
+        .but_map:hover{
+            background-color: rgba(0, 0, 0, 0.275);
+            p{
+                display: block;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}

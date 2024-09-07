@@ -1,0 +1,36 @@
+.search {
+  background-color: #f2f1f8;
+  padding-bottom: 140px;
+  .nav {
+    background-color: #fff;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    input {
+      border: none;
+      outline: none;
+      width: 80%;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .filter_img{
+      cursor: pointer;
+    }
+  }
+  .map{
+    cursor: pointer;
+    background-color: #421094;
+    position: fixed;
+    bottom: 92px;
+    margin-left: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-radius: 12px;
+    p{
+      font-weight: 500;
+      margin-left: 12px;
+    }
+  }
+}

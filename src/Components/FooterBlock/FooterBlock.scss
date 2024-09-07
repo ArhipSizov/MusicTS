@@ -1,0 +1,19 @@
+.footerBlock{
+    text-decoration: none;
+    .img, .img_alt, .img_active, .img_active_alt{
+        display: block;
+        margin: 8px auto;
+        height: 21px;
+    }
+    .img_active, .img_active_alt{
+        display: none;
+    }
+    .img_alt, .img_active_alt{
+        height: 18px;
+        margin: 9.5px auto;
+    }
+    .text{
+        color: #757575;
+        text-align: center;
+    }
+}

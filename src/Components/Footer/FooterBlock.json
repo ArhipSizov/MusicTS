@@ -1,0 +1,38 @@
+[
+  {
+    "id":"0",
+    "img_active": "SearchActive.svg",
+    "img": "Search.svg",
+    "text": "Поиск",
+    "link": "",
+    "clas": "img",
+    "clas_active": "img_active"
+  },
+  {
+    "id":"1",
+    "img_active": "OrdersActive.svg",
+    "img": "Orders.svg",
+    "text": "Заказы",
+    "link": "orders",
+    "clas": "img",
+    "clas_active": "img_active"
+  },
+  {
+    "id":"2",
+    "img_active": "MessagesActive.svg",
+    "img": "Messages.svg",
+    "text": "Сообщения",
+    "link": "messages",
+    "clas": "img_alt",
+    "clas_active": "img_active_alt"
+  },
+  {
+    "id":"3",
+    "img_active": "ProfileActive.svg",
+    "img": "Profile.svg",
+    "text": "Профиль",
+    "link": "profile",
+    "clas": "img",
+    "clas_active": "img_active"
+  }
+]
