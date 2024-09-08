@@ -10,6 +10,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { useSelector } from "react-redux";
+import { userArrAdd } from "../../Common/userArrAdd";
 
 import "./Register.scss";
 
@@ -28,7 +29,6 @@ export default function Register() {
   const [but, setBut] = useState<string>("none");
   const [error, setError] = useState<string>("none");
   const [butFalse, setButFalse] = useState<string>("butFalse");
-  const [help, setHelp] = useState<number>(0);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -42,12 +42,10 @@ export default function Register() {
 
   const userArr = useSelector((state:any) => state.user.user);
 
-  userArr.forEach((element:any) => {
-    if (help == 0) {
-      setHelp(element.email);
-      setEmail(element.email);
-    }
-  });
+  if (email == "") {
+    userArrAdd(userArr, undefined, undefined, undefined, setEmail);
+  }
+
 
   function getRegisterData(event:any) {
     event.preventDefault();

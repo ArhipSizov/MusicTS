@@ -2,6 +2,7 @@ import { collection, setDoc, getDocs, doc } from "firebase/firestore";
 import { db } from "../../main";
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import { userArrAdd } from "../../Common/userArrAdd";
 
 import MassageComponent from "../../Components/MassageComponent/MassageComponent";
 
@@ -15,9 +16,13 @@ export default function Messages() {
 
   const userArr = useSelector((state:any) => state.user.user);
   setTimeout(() => {
-    userArr.forEach((element:any) => {
-      setEmail(element.email);
-    });
+    userArrAdd(
+      userArr,
+      undefined,
+      undefined,
+      undefined,
+      setEmail
+    )
   }, 1500);
   async function addDocFunction() {
     if (coment !== "" && email !== "") {

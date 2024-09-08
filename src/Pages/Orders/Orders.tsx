@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import { userArrAdd } from "../../Common/userArrAdd";
 
 import OrdersComponent from "../../Components/OrdersComponent/OrdersComponent";
 
@@ -16,12 +17,17 @@ export default function Orders() {
 
   const userArr = useSelector((state:any) => state.user.user);
   if (key == "") {
-    userArr.forEach((element:any) => {
-      setKey(element.key);
-      if (element.rooms !== undefined) {
-        setRooms(element.rooms);
-      }
-    });
+    userArrAdd(
+      userArr,
+      undefined,
+      undefined,
+      setKey,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      setRooms
+    )
   }
 
   function showOrderFunction(num:number) {

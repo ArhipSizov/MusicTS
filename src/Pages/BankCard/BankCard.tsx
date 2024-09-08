@@ -4,6 +4,8 @@ import { ref, update } from "firebase/database";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { database } from "../../Services/store/index";
+import { userArrAdd } from "../../Common/userArrAdd";
+
 
 import BankCardComponent from "../../Components/BankCardComponent/BankCardComponent";
 
@@ -23,12 +25,16 @@ export default function BankCard() {
 
   const userArr = useSelector((state:any) => state.user.user);
   if (key == "") {
-    userArr.forEach((element:any) => {
-      setKey(element.key);
-      if (element.card !== undefined) {
-        setCard(element.card);
-      }
-    });
+    userArrAdd(
+      userArr,
+      undefined,
+      setNumber,
+      setKey,
+      undefined,
+      undefined,
+      undefined,
+      setCard
+    )
   }
 
   function updateDatabase() {
@@ -67,7 +73,7 @@ export default function BankCard() {
           value={number}
           onChange={(event) => setNumber(event.target.value)}
           placeholder="Номер карточки"
-          type="text"
+          type="number"
         />
         <div>
           <input
@@ -80,7 +86,7 @@ export default function BankCard() {
             value={CVV}
             onChange={(event) => setCVV(event.target.value)}
             placeholder="CVV"
-            type="text"
+            type="number"
           />
         </div>
         {error && <p className="error">Неверные данные</p>}

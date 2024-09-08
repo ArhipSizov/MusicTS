@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { useSelector } from "react-redux";
+import { userArrAdd } from "../../Common/userArrAdd";
 
 import "./Recovery.scss";
 
@@ -10,16 +11,11 @@ export default function Recovery() {
   const [showRegister1, setShowRegister1] = useState<boolean>(true);
   const [showRegister2, setShowRegister2] = useState<boolean>(false);
 
-  const [help, setHelp] = useState<number>(0);
+  const userArr = useSelector((state: any) => state.user.user);
 
-  const userArr = useSelector((state:any) => state.user.user);
-
-  userArr.forEach((element:any) => {
-    if (help == 0) {
-      setHelp(element.email);
-      setEmail(element.email);
-    }
-  });
+  if (email == "") {
+    userArrAdd(userArr, undefined, undefined, undefined, setEmail);
+  }
 
   const auth = getAuth();
 

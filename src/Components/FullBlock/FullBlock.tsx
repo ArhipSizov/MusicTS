@@ -25,7 +25,7 @@ export default function FullBlock(item:any) {
       dataArr.forEach(function (item2:any) {
         if (item2.favorites !== undefined) {
           item2.favorites.forEach(function (item3:string) {
-            if (item.name == item3) {
+            if (item.item.name == item3) {
               favoritesHelpNum = favoritesHelpNum + 1;
             }
           });

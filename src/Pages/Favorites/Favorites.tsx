@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import { userArrAdd } from "../../Common/userArrAdd";
 
 import MiniBlock from "../../Components/MiniBlock/MiniBlock";
 import arrCompanies from "../../../companies.json";
@@ -15,12 +16,15 @@ export default function Favorites() {
 
     const userArr = useSelector((state:any) => state.user.user);
     if (key == "") {
-      userArr.forEach((element:any) => {
-        if (element.favorites !== undefined) {
-          setFavorites(element.favorites);
-        }
-        setKey(element.key);
-      });
+      userArrAdd(
+        userArr,
+        undefined,
+        undefined,
+        setKey,
+        undefined,
+        undefined,
+        setFavorites
+      )
     }
   return (
     <div className="favorites">

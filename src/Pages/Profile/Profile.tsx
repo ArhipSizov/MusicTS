@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import { useSelector } from "react-redux";
+import { userArrAdd } from "../../Common/userArrAdd";
 
 import "./Profile.scss";
 
@@ -20,11 +21,13 @@ export default function Profile() {
 
   const userArr = useSelector((state:any) => state.user.user);
   if (email == "") {
-    userArr.forEach((element:any) => {
-      setEmail(element.email);
-      setName(element.name);
-      setNumber(element.number);
-    });
+    userArrAdd(
+      userArr,
+      setName,
+      setNumber,
+      undefined,
+      setEmail
+    )
   }
 
   function signOutUser() {

@@ -75,12 +75,12 @@ export default function MiniBlock(item:any) {
   }, [item.input, item.showFilter]);
 
   useEffect(() => {
-    item.favorites.forEach(function (item:any) {
-      if (item == item.name) {
+    item.favorites.forEach(function (item2:any) {
+      if (item2 == item.name) {
         setHeart("/heart.svg");
       }
       if (item.classBlock == "favorites") {
-        if (item == item.name) {
+        if (item2 == item.name) {
           setShowBlock(true);
         }
       }

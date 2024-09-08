@@ -4,6 +4,8 @@ import { getStorage, ref, uploadString } from "firebase/storage";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
+import { userArrAdd } from "../../../Common/userArrAdd";
+
 import "cropperjs/dist/cropper.css";
 import "./styles/imageupload.css";
 
@@ -22,9 +24,13 @@ const ImageUpload = (props: IMGProps) => {
   const [email, setEmail] = useState("");
   const userArr = useSelector((state: any) => state.user.user);
   if (email == "") {
-    userArr.forEach((element: any) => {
-      setEmail(element.email);
-    });
+    userArrAdd(
+      userArr,
+      undefined,
+      undefined,
+      undefined,
+      setEmail
+    )
   }
 
   const storage = getStorage();

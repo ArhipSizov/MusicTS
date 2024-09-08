@@ -4,6 +4,8 @@ import { ref, update } from "firebase/database";
 import { database } from "../../Services/store/index";
 import { NavLink } from "react-router-dom";
 
+import { userArrAdd } from "../../Common/userArrAdd";
+
 import "./BookingPay.scss";
 
 interface item{
@@ -25,12 +27,17 @@ export default function BookingPay(item:item) {
   const [showPayCard, setShowPayCard] = useState<boolean>();
   const userArr = useSelector((state:any) => state.user.user);
   if (key == "") {
-    userArr.forEach((element:any) => {
-      setKey(element.key);
-      if (element.card !== undefined) {
-        setCard(element.card);
-      }
-    });
+    userArrAdd(
+      userArr,
+      undefined,
+      undefined,
+      setKey,
+      undefined,
+      undefined,
+      undefined,
+      setCard,
+      undefined
+    )
   }
 
   function updateDatabase() {

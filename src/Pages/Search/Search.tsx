@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import { userArrAdd } from "../../Common/userArrAdd";
 
 import Filter from "../../Components/Filter/Filter";
 import MiniBlock from "../../Components/MiniBlock/MiniBlock";
@@ -21,12 +22,15 @@ export default function Search() {
 
   const userArr = useSelector((state:any) => state.user.user);
   if (key == "") {
-    userArr.forEach((element:any) => {
-      if (element.favorites !== undefined) {
-        setFavorites(element.favorites);
-      }
-      setKey(element.key);
-    });
+    userArrAdd(
+      userArr,
+      undefined,
+      undefined,
+      setKey,
+      undefined,
+      undefined,
+      setFavorites
+    )
   }
 
   const companies = Object.values(arrCompanies);
