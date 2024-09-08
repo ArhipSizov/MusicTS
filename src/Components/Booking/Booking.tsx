@@ -41,12 +41,12 @@ export default function Booking(item: any) {
     block(blockConst);
   }
 
-  let arrRoomEquipment = eval("item.item.halls." + room + ".equipment");
-  let arrRoomServices = eval("item.item.halls." + room + ".services");
+  let arrRoomEquipment = eval("item.item.item.halls." + room + ".equipment");
+  let arrRoomServices = eval("item.item.item.halls." + room + ".services");
 
   const date = new Date();
 
-  const halls = Object.values(item.item.halls);
+  const halls = Object.values(item.item.item.halls);
 
   function editTime(help:number) {
     help = help + 1;
@@ -92,6 +92,8 @@ export default function Booking(item: any) {
   setTimeout(() => {
     correctCost();
   }, 1);
+   
+  
   return (
     <div onClick={() => correctCost()} className="booking">
       {showPay && (
@@ -132,10 +134,10 @@ export default function Booking(item: any) {
       {activeBlock12 && (
         <div className="body">
           <div className="basic">
-            <img className="logo_img" src={item.item.logo} alt="" />
+            <img className="logo_img" src={item.item.item.logo} alt="" />
             <div>
-              <h1>{item.item.name}</h1>
-              <p>{item.item.area}</p>
+              <h1>{item.item.item.name}</h1>
+              <p>{item.item.item.area}</p>
             </div>
           </div>
           <div>
@@ -161,8 +163,8 @@ export default function Booking(item: any) {
                   item={item2}
                   {...item2}
                   key={item2}
-                  start={item.item.time_hours_start}
-                  end={item.item.time_hours_end}
+                  start={item.item.item.time_hours_start}
+                  end={item.item.item.time_hours_end}
                   costTime={costTime}
                   setCostTime={setCostTime}
                   setTrueDate={setTrueDate}

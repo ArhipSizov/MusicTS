@@ -29,7 +29,6 @@ import {
 import "./App.scss";
 
 function App() {
-  const [user, setUser] = useState<any>({});
   const [showNavFooter, setShowNavFooter] = useState<boolean>(false);
   const [email, setIEmail] = useState<string>("");
 
@@ -49,18 +48,10 @@ function App() {
     onAuthStateChanged(auth, (currentUser) => {
       if (!currentUser) {
         setShowNavFooter(false);
-        setUser({
-          email: null,
-          displayName: null,
-        });
         navigate("/loading");
         return;
       }
       setShowNavFooter(true);
-      setUser({
-        displayName: currentUser.displayName,
-        email: currentUser.email,
-      });
       onValue(starCountRef, (snapshot) => {
         data = snapshot.val();
         const dataArr = Object.values(data.users);

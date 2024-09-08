@@ -7,6 +7,8 @@ import { useSelector } from "react-redux";
 
 import App from "../../Components/CroptImage/App";
 
+import { userArrAdd } from "../../Common/userArrAdd";
+
 import "./Editing.scss";
 
 export default function Editing() {
@@ -19,25 +21,22 @@ export default function Editing() {
   const [card, setCard] = useState<any>({});
 
   const navigate = useNavigate();
-  const userArr = useSelector((state:any) => state.user.user);
-  if (email == "") {
-    userArr.forEach((element:any) => {
-      setName(element.name);
-      setNumber(element.number);
-      setKey(element.key);
-      setEmail(element.email);
-      setPasvord(element.password);
-      if (element.favorites !== undefined) {
-        setFavorites(element.favorites);
-      }
-      if (element.card !== undefined) {
-        setCard(element.card);
-      }
-    });
+  const userArr = useSelector((state: any) => state.user.user);
+  if (key == "") {
+      userArrAdd(
+        userArr,
+        setName,
+        setNumber,
+        setKey,
+        setEmail,
+        setPasvord,
+        setFavorites,
+        setCard
+      )
   }
 
   function updateDatabase() {
-    const updates:any = {};
+    const updates: any = {};
     updates["/users/" + key] = null;
 
     const postData = {

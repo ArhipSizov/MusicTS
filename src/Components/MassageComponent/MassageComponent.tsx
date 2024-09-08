@@ -8,7 +8,7 @@ export default function MassageComponent(item:any) {
   const [classMassage, setClassMassage] = useState<string>("");
   const [userEmail, setUserEmail] = useState<boolean>(true);
 
-  const userArr = useSelector(() => item.state.user.user);
+  const userArr = useSelector((state:any) => state.user.user);
   
   if (trueEmail == "") {
     userArr.forEach((element:any) => {

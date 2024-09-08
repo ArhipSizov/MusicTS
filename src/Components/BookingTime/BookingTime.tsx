@@ -56,7 +56,7 @@ export default function BookingTime(item: item) {
             costTime={item.costTime}
             setCostTime={item.setCostTime}
             setTrueDate={item.setTrueDate}
-            day={item}
+            day={item.item}
             trueDate={item.trueDate}
           ></BookingTimeComponent>
         ))}

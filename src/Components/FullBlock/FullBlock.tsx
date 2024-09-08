@@ -48,19 +48,19 @@ export default function FullBlock(item:any) {
       <div className="nav">
         <img onClick={() => item.setShowBlock(false)} src="/backAlt.svg" alt="" />
       </div>
-      <img className="photo" src={item.photo} alt="" />
+      <img className="photo" src={item.item.photo} alt="" />
       <div className="body">
         <div className="top_information">
-          <img className="logo_img" src={item.logo} alt="" />
+          <img className="logo_img" src={item.item.logo} alt="" />
           <div className="top_information_no_img">
-            <p className="name">{item.name}</p>
+            <p className="name">{item.item.name}</p>
             <p></p>
-            <p>{item.area}</p>
+            <p>{item.item.area}</p>
             <div>
               <p className="p_alt">4,8</p>
               <img src="star_full.svg" alt="" />
             </div>
-            <p>Площадь: {item.square}м2</p>
+            <p>Площадь: {item.item.square}м2</p>
             <div>
               <p>{favoritesNum}</p>
               <img src="/heart.svg" alt="" />
@@ -69,12 +69,12 @@ export default function FullBlock(item:any) {
         </div>
         <div>
           <h2>Описание</h2>
-          <p>{item.description}</p>
+          <p>{item.item.description}</p>
         </div>
         <div>
           <h2>Услуги</h2>
           <div className="list">
-            {item.services.map((item:string) => (
+            {item.item.services.map((item:string) => (
               <p key={item}>{item}</p>
             ))}
           </div>
@@ -82,32 +82,32 @@ export default function FullBlock(item:any) {
         <div>
           <h2>Удобства</h2>
           <div className="list">
-            {item.facilities.map((item:string) => (
+            {item.item.facilities.map((item:string) => (
               <p key={item}>{item}</p>
             ))}
           </div>
         </div>
         <div>
           <h2>Время работы</h2>
-          <p>{item.time_days}</p>
+          <p>{item.item.time_days}</p>
           <p>
-            {item.time_hours_start}:00 - {item.time_hours_end}:00
+            {item.item.time_hours_start}:00 - {item.time_hours_end}:00
           </p>
         </div>
         <div>
           <h2>Контакты</h2>
           <div className="list">
-            <p>{item.number}</p>
+            <p>{item.item.number}</p>
           </div>
-          <p>{item.email}</p>
+          <p>{item.item.email}</p>
         </div>
         <div>
           <h2>Расположение</h2>
-          <p>{item.location}</p>
+          <p>{item.item.location}</p>
         </div>
         <a href="https://yandex.ru/maps/?um=constructor%3Af2f5caf6448b1ab3548e44bc551bdf5f59dbf866488697858b3059f82f0bca7d&source=constructorLink">
           <div>
-            <img className="img_map" src={item.image_map} alt="" />
+            <img className="img_map" src={item.item.image_map} alt="" />
             <div className="but_map">
               <p>Посмотреть на карте</p>
             </div>

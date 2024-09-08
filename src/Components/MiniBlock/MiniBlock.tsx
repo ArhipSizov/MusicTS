@@ -95,12 +95,13 @@ export default function MiniBlock(item:any) {
     if (params == "add") {
       newArr.push(item.name);
     } else {
-      newArr = newArr.filter((newArr) => newArr !== item.ame);
+      newArr = newArr.filter((newArr) => newArr !== item.name);
     }
     item.setFavorites(newArr);
-    const updates = {};
+    const updates:any = {};
     const postData = newArr;
-    item.updates["/users/" + item.keyFavorites + "/favorites/"] = postData;
+    console.log(postData);
+    updates["/users/" + item.keyFavorites + "/favorites/"] = postData;
     return update(ref(database), updates);
   }
   function heartFunction() {

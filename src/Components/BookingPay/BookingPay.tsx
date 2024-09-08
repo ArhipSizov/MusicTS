@@ -12,9 +12,13 @@ interface item{
   item:any,
   room: string,
   setShowPay:(value: boolean) => void;
+  setTrueDate:(value: boolean) => void;
   trueDate:any,
 }
 export default function BookingPay(item:item) {
+  console.log(item);
+  
+  
   const [key, setKey] = useState<string>("");
   const [card, setCard] = useState<string>("");
 
@@ -31,19 +35,19 @@ export default function BookingPay(item:item) {
 
   function updateDatabase() {
     const updates:any = {};
-    const trueRoom = eval("item.halls." + item.room + ".name")
+    const trueRoom = eval("item.item.item.halls." + item.room + ".name")
 
     const postData = {
       time: item.costTime,
       date: item.trueDate,
       cost: item.cost,
       room: trueRoom,
-      name: item.item.name,
-      logo: item.item.logo,
-      area: item.item.area,
-      number: item.item.number,
+      name: item.item.item.name,
+      logo: item.item.item.logo,
+      area: item.item.item.area,
+      number: item.item.item.number,
     };
-    updates["/users/" + key + "/rooms/" + item.item.name + item.trueDate] = postData;
+    updates["/users/" + key + "/rooms/" + item.item.item.name + item.trueDate] = postData;
     return update(ref(database), updates);
   }
   return (
@@ -53,10 +57,10 @@ export default function BookingPay(item:item) {
         <h1>Оплата</h1>
       </div>
       <div className="basic">
-        <img className="logo_img" src={item.item.logo} alt="" />
+        <img className="logo_img" src={item.item.item.logo} alt="" />
         <div>
-          <h1>{item.item.name}</h1>
-          <p>{item.item.area}</p>
+          <h1>{item.item.item.name}</h1>
+          <p>{item.item.item.area}</p>
         </div>
       </div>
       <p className="cost">Итоговая стоимость: {item.cost}р.</p>
