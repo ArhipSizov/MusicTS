@@ -31,8 +31,8 @@ function userArrAdd(
     if (element.card !== undefined && setCard !== undefined) {
       setCard(element.card);
     }
-    if (element.room !== undefined && setRoom !== undefined) {
-      setRoom(element.card);
+    if (element.rooms !== undefined && setRoom !== undefined) {
+      setRoom(element.rooms);
     }
   });
 }

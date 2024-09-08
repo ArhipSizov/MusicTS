@@ -18,6 +18,7 @@ export default function Editing() {
   const [name, setName] = useState<string>("");
   const [number, setNumber] = useState<string>("");
   const [favorites, setFavorites] = useState<any[]>([]);
+  const [room, setRoom] = useState<any>({});
   const [card, setCard] = useState<any>({});
 
   const navigate = useNavigate();
@@ -31,10 +32,10 @@ export default function Editing() {
         setEmail,
         setPasvord,
         setFavorites,
-        setCard
+        setCard,
+        setRoom
       )
   }
-
   function updateDatabase() {
     const updates: any = {};
     updates["/users/" + key] = null;
@@ -47,6 +48,7 @@ export default function Editing() {
       name: name,
       favorites: favorites,
       card: card,
+      rooms: room,
     };
     updates["/users/" + key] = postData;
     navigate("/profile");
